@@ -48,11 +48,18 @@ class Ui_mwindow_sim_5_floors(object):
         self.hori_layout_nav.addWidget(self.vert_line_buttons)
         self.btn_run_sim_naive = QtWidgets.QPushButton(self.layoutWidget)
         self.btn_run_sim_naive.setObjectName("btn_run_sim_naive")
-        self.hori_layout_nav.addWidget(self.btn_run_sim_naive, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.hori_layout_nav.addWidget(
+            self.btn_run_sim_naive, 0, QtCore.Qt.AlignmentFlag.AlignLeft
+        )
         self.btn_run_sim_improved = QtWidgets.QPushButton(self.layoutWidget)
         self.btn_run_sim_improved.setObjectName("btn_run_sim_improved")
         self.hori_layout_nav.addWidget(self.btn_run_sim_improved)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            40,
+            20,
+            QtWidgets.QSizePolicy.Policy.Expanding,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+        )
         self.hori_layout_nav.addItem(spacerItem)
         self.vert_layout_lift_control.addLayout(self.hori_layout_nav)
         self.hori_line_nav = QtWidgets.QFrame(self.layoutWidget)
@@ -159,7 +166,12 @@ class Ui_mwindow_sim_5_floors(object):
         self.lbl_update.setText("")
         self.lbl_update.setObjectName("lbl_update")
         self.vert_layout_lift_control.addWidget(self.lbl_update)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20,
+            40,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+            QtWidgets.QSizePolicy.Policy.Expanding,
+        )
         self.vert_layout_lift_control.addItem(spacerItem1)
         mwindow_sim_5_floors.setCentralWidget(self.central_widget)
 
@@ -168,20 +180,38 @@ class Ui_mwindow_sim_5_floors(object):
 
     def retranslateUi(self, mwindow_sim_5_floors):
         _translate = QtCore.QCoreApplication.translate
-        mwindow_sim_5_floors.setWindowTitle(_translate("mwindow_sim_5_floors", "Lift Control Simulation – 5 Floors"))
-        self.lbl_lift_control.setText(_translate("mwindow_sim_5_floors", "Lift Control Simulation – 5 Floors"))
-        self.btn_generate_new_sim.setText(_translate("mwindow_sim_5_floors", "Generate New Simulation"))
-        self.btn_run_sim_naive.setText(_translate("mwindow_sim_5_floors", "Run Simulation (Naive)"))
-        self.btn_run_sim_improved.setText(_translate("mwindow_sim_5_floors", "Run Simulation (Improved)"))
-        self.lbl_num_delivered.setText(_translate("mwindow_sim_5_floors", "Number of People Delivered: 0"))
-        self.lbl_distance_travelled.setText(_translate("mwindow_sim_5_floors", "Total Distance Travelled: 0"))
+        mwindow_sim_5_floors.setWindowTitle(
+            _translate("mwindow_sim_5_floors", "Lift Control Simulation – 5 Floors")
+        )
+        self.lbl_lift_control.setText(
+            _translate("mwindow_sim_5_floors", "Lift Control Simulation – 5 Floors")
+        )
+        self.btn_generate_new_sim.setText(
+            _translate("mwindow_sim_5_floors", "Generate New Simulation")
+        )
+        self.btn_run_sim_naive.setText(
+            _translate("mwindow_sim_5_floors", "Run Simulation (Improved)")
+        )
+        self.btn_run_sim_improved.setText(
+            _translate("mwindow_sim_5_floors", "Run Simulation (Naive)")
+        )
+        self.lbl_num_delivered.setText(
+            _translate("mwindow_sim_5_floors", "Number of People Delivered: 0")
+        )
+        self.lbl_distance_travelled.setText(
+            _translate("mwindow_sim_5_floors", "Total Distance Travelled: 0")
+        )
         self.lbl_delivered_2.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_floor_0.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_floor_3.setText(_translate("mwindow_sim_5_floors", "0"))
-        self.lbl_delivered_floors.setText(_translate("mwindow_sim_5_floors", "Number of People Delivered:"))
+        self.lbl_delivered_floors.setText(
+            _translate("mwindow_sim_5_floors", "Number of People Delivered:")
+        )
         self.lbl_delivered_4.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_floor_1.setText(_translate("mwindow_sim_5_floors", "0"))
-        self.lbl_waiting_floors.setText(_translate("mwindow_sim_5_floors", "Number of People Waiting:"))
+        self.lbl_waiting_floors.setText(
+            _translate("mwindow_sim_5_floors", "Number of People Waiting:")
+        )
         self.lbl_waiting_0.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_lift_floors.setText(_translate("mwindow_sim_5_floors", "Lift Floors:"))
         self.lbl_floor_2.setText(_translate("mwindow_sim_5_floors", "0"))
@@ -193,5 +223,12 @@ class Ui_mwindow_sim_5_floors(object):
         self.lbl_delivered_3.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_waiting_4.setText(_translate("mwindow_sim_5_floors", "0"))
         self.lbl_delivered_1.setText(_translate("mwindow_sim_5_floors", "0"))
-        self.lbl_key.setText(_translate("mwindow_sim_5_floors", "(White blocks represent floors, and red blocks represent floors with the lift on it.)"))
-        self.lbl_num_in_lift.setText(_translate("mwindow_sim_5_floors", "Number of People in Lift: 0"))
+        self.lbl_key.setText(
+            _translate(
+                "mwindow_sim_5_floors",
+                "(White blocks represent floors, and red blocks represent floors with the lift on it.)",
+            )
+        )
+        self.lbl_num_in_lift.setText(
+            _translate("mwindow_sim_5_floors", "Number of People in Lift: 0")
+        )

@@ -19,6 +19,7 @@ the simulation configuration, people generated, movements of the lift, people
 pending (if applicable), people in the lift, people delivered, and an overview
 of people after the simulation is complete.
 """
+
 import json
 import logging
 import os

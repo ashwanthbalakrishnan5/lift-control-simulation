@@ -151,7 +151,7 @@
         </font>
        </property>
        <property name="text">
-        <string>(Note that only configurations with up to five floors will be simulated visually.)</string>
+        <string>(Note that only configurations with up to five floors will be simulated visually.1234)</string>
        </property>
       </widget>
      </item>

@@ -40,7 +40,9 @@ class Ui_mwindow_main_menu(object):
         self.hori_layout_nav.setObjectName("hori_layout_nav")
         self.btn_config_sim = QtWidgets.QPushButton(self.layoutWidget)
         self.btn_config_sim.setObjectName("btn_config_sim")
-        self.hori_layout_nav.addWidget(self.btn_config_sim, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.hori_layout_nav.addWidget(
+            self.btn_config_sim, 0, QtCore.Qt.AlignmentFlag.AlignLeft
+        )
         self.vert_line_buttons = QtWidgets.QFrame(self.layoutWidget)
         self.vert_line_buttons.setFrameShape(QtWidgets.QFrame.Shape.VLine)
         self.vert_line_buttons.setFrameShadow(QtWidgets.QFrame.Shadow.Sunken)
@@ -48,8 +50,15 @@ class Ui_mwindow_main_menu(object):
         self.hori_layout_nav.addWidget(self.vert_line_buttons)
         self.btn_open_sim = QtWidgets.QPushButton(self.layoutWidget)
         self.btn_open_sim.setObjectName("btn_open_sim")
-        self.hori_layout_nav.addWidget(self.btn_open_sim, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.hori_layout_nav.addWidget(
+            self.btn_open_sim, 0, QtCore.Qt.AlignmentFlag.AlignLeft
+        )
+        spacerItem = QtWidgets.QSpacerItem(
+            40,
+            20,
+            QtWidgets.QSizePolicy.Policy.Expanding,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+        )
         self.hori_layout_nav.addItem(spacerItem)
         self.vert_layout_lift_control.addLayout(self.hori_layout_nav)
         self.hori_line_nav = QtWidgets.QFrame(self.layoutWidget)
@@ -88,7 +97,12 @@ class Ui_mwindow_main_menu(object):
         self.lbl_instruction.setFont(font)
         self.lbl_instruction.setObjectName("lbl_instruction")
         self.vert_layout_lift_control.addWidget(self.lbl_instruction)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20,
+            40,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+            QtWidgets.QSizePolicy.Policy.Expanding,
+        )
         self.vert_layout_lift_control.addItem(spacerItem1)
         mwindow_main_menu.setCentralWidget(self.central_widget)
 
@@ -97,13 +111,34 @@ class Ui_mwindow_main_menu(object):
 
     def retranslateUi(self, mwindow_main_menu):
         _translate = QtCore.QCoreApplication.translate
-        mwindow_main_menu.setWindowTitle(_translate("mwindow_main_menu", "Lift Control Simulation – Main Menu"))
-        self.lbl_lift_control.setText(_translate("mwindow_main_menu", "Lift Control Simulation – Main Menu"))
-        self.btn_config_sim.setText(_translate("mwindow_main_menu", "Configure Simulation"))
+        mwindow_main_menu.setWindowTitle(
+            _translate("mwindow_main_menu", "Lift Control Simulation – Main Menu")
+        )
+        self.lbl_lift_control.setText(
+            _translate("mwindow_main_menu", "Lift Control Simulation – Main Menu")
+        )
+        self.btn_config_sim.setText(
+            _translate("mwindow_main_menu", "Configure Simulation")
+        )
         self.btn_open_sim.setText(_translate("mwindow_main_menu", "Open Simulation"))
-        self.lbl_current_config.setText(_translate("mwindow_main_menu", "Current Configuration"))
-        self.lbl_num_floors.setText(_translate("mwindow_main_menu", "Number of Floors: "))
-        self.lbl_num_people.setText(_translate("mwindow_main_menu", "Number of People: "))
-        self.lbl_lift_capacity.setText(_translate("mwindow_main_menu", "Lift Capacity: "))
-        self.lbl_ui_delay.setText(_translate("mwindow_main_menu", "UI Delay (Milliseconds): "))
-        self.lbl_instruction.setText(_translate("mwindow_main_menu", "(Note that only configurations with up to five floors will be simulated visually.)"))
+        self.lbl_current_config.setText(
+            _translate("mwindow_main_menu", "Current Configuration")
+        )
+        self.lbl_num_floors.setText(
+            _translate("mwindow_main_menu", "Number of Floors: ")
+        )
+        self.lbl_num_people.setText(
+            _translate("mwindow_main_menu", "Number of People: ")
+        )
+        self.lbl_lift_capacity.setText(
+            _translate("mwindow_main_menu", "Lift Capacity: ")
+        )
+        self.lbl_ui_delay.setText(
+            _translate("mwindow_main_menu", "UI Delay (Milliseconds): ")
+        )
+        self.lbl_instruction.setText(
+            _translate(
+                "mwindow_main_menu",
+                "Machine Learning Project Review \n21BCE1779\n21BCE1125\n21BCE1059",
+            )
+        )
